@@ -1,4 +1,13 @@
 <div id="<%= dom_id friend %>">
+  <td><%= friend.name %></td>
+  <td><%= friend.email %></td>
+  <td><%= friend.phone %></td>
+  <td><%= link_to "Show" , friend, class:"btn btn-info" %></td>
+  <td><%= link_to "Edit" , edit_friend_path(friend), class:"btn btn-secondary" %></td>
+  <td><%= link_to "Destroy", friend, method: :delete, data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
+</div>
+
+<!--
   <p>
     <strong>Name:</strong>
     <%= friend.name %>
@@ -13,5 +22,6 @@
     <strong>Phone:</strong>
     <%= friend.phone %>
   </p>
-
-</div>
+  <%= link_to "Show this friend", friend, class: "btn btn-info" %>
+  <%= button_to "Destroy this friend", @friend, method: :delete, class: "btn btn-danger" %>
+-->
