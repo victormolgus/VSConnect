@@ -81,8 +81,8 @@ gem "pg", "~> 1.4"
 
 gem "bootstrap", "~> 5.2"
 
-gem "file_validators", "~> 3.0"
+#gem "file_validators", "~> 3.0"
 
-gem "image_processing", "~> 1.12"
+#gem "image_processing", "~> 1.12"
 
-gem "ruby-vips", "~> 2.1"
+#gem "ruby-vips", "~> 2.1"
