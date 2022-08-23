@@ -90,7 +90,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.load_defaults 7.0
-config.active_storage.variant_processor = :mini_magick  
+ # config.load_defaults 7.0
+#config.active_storage.variant_processor = :mini_magick  
 
 end
