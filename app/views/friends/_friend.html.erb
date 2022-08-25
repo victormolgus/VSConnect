@@ -2,7 +2,7 @@
   <td><%= friend.name %></td>
   <td><%= friend.email %></td>
   <td><%= friend.phone %></td>
-  <td><%= link_to "Show" , friend, class:"btn btn-info" %></td>
+  <td><%= link_to "Show" , friend, class:"btn btn-primary" %></td>
   <td><%= link_to "Edit" , edit_friend_path(friend), class:"btn btn-secondary" %></td>
   <td><%= link_to "Destroy", friend, method: :delete, data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
 </div>

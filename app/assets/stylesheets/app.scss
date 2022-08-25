@@ -97,12 +97,13 @@ hr {
     background-color: #35393B !important;
 }
 .btn-secondary:hover{
-    background-color: #EDFAD4 !important;
+    background-color: #444647 !important;
+    border-color: #444647 !important;
 }
 
 .footer_config {
     flex-shrink: 0;
-    padding-top: 75px;
+    padding: 75px 10px;
     height: 50px;
     background-color: #CED6B7 !important;
 
