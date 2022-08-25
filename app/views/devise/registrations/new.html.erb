@@ -1,6 +1,6 @@
 <div class="container content">
-  <div class="row my-5 justify-content-center">
-    <h2 class="text-center my-5">Crie uma nova conta</h2>
+  <div class="row my-2 justify-content-center">
+    <h2 class="text-center my-3">Crie uma nova conta</h2>
     <div class="col-lg-6">
       <div class="card">
         <div class="card-body">
@@ -9,48 +9,43 @@
             <%= render "devise/shared/error_messages" , resource: resource %>
 
               <div class="mb-3">
-                <%= f.label :first_name %><br />
                   <%= f.text_field :first_name, autofocus: true, autocomplete: "first_name" , required: true,
-                    class: "form-control" %>
+                    class: "form-control", placeholder:"Nome" %>
               </div>
 
               <div class="mb-3">
-                <%= f.label :last_name %><br />
                   <%= f.text_field :last_name, autofocus: true, autocomplete: "last_name" , required: true,
-                    class: "form-control" %>
+                    class: "form-control", placeholder:"Sobrenome" %>
               </div>
 
               <div class="mb-3">
-                <%= f.label :email %><br />
-                  <%= f.email_field :email, autofocus: true, autocomplete: "email" , class: "form-control" %>
+                  <%= f.email_field :email, autofocus: true, autocomplete: "email" , class: "form-control", placeholder: "E-mail" %>
               </div>
 
               <div class="mb-3">
-                <%= f.label :password %>
                   <% if @minimum_password_length %>
-                    <em>(<%= @minimum_password_length %> characters minimum)</em>
+                    <em>(Mínimo de caracteres: <%= @minimum_password_length %>)</em>
                     <% end %><br />
-                      <%= f.password_field :password, autocomplete: "new-password" , class: "form-control" %>
+                      <%= f.password_field :password, autocomplete: "new-password" , class: "form-control", placeholder: "Senha" %>
               </div>
 
               <div class="mb-3">
-                <%= f.label :password_confirmation %><br />
-                  <%= f.password_field :password_confirmation, autocomplete: "new-password" , class: "form-control" %>
+                  <%= f.password_field :password_confirmation, autocomplete: "new-password" , class: "form-control", placeholder: "Confirme sua senha" %>
               </div>
 
               <div class="mb-3">
-                <%= f.label :gender %><br />
+                <label for="InputGender" class="form-label">Gênero</label><br />
                   <!-- <%= f.select :gender, %w{Male Female Other}, :prompt=> 'Select', required: true, placeholder: 'Gender'%>  -->
-                  <%= f.select :gender, options_for_select(["Male","Female","Other"]), {prompt: "Select" }, {
+                  <%= f.select :gender, options_for_select(["Masculino","Feminino","Outro"]), {prompt: "Selecione" }, {
                     class: "form-select" } %>
               </div>
 
               <div class="mb-3">
-                <%= f.label :birthdate %><br />
+                <label for="InputBirthDate" class="form-label">Data de nascimento</label><br />
                   <%= f.date_field :birthdate, required: true, class: "form-control" %>
               </div>
 
-              <%= f.submit "Sign up" , class: "btn btn-secondary mb-3" %>
+              <%= f.submit "Cadastre-se" , class: "btn btn-secondary mb-3" %>
                 <% end %>
                   <%= render "devise/shared/links" %>
         </div>

@@ -54,8 +54,18 @@ hr {
 }
 
 .nav-link{
-    color: #E8E6D4;
+    color: #C2BFA7 !important;
 }
+
+.nav-link:hover{
+    color: #E8E6D4 !important;
+}
+
+.nav-item{
+    padding-right: 10px;
+}
+
+
 
 #nav-logo{
     color: #E8E6D4;
@@ -67,10 +77,6 @@ hr {
 
 .navbar-brand:hover {
     color: #C2BFA7 !important;
-}
-
-.nav-item {
-    padding-right: 10px;
 }
 
 .btn {
@@ -88,7 +94,7 @@ hr {
     border-color: #A9C2B3 !important;
 }
 .btn-secondary{
-    background-color: #B6C795 !important;
+    background-color: #35393B !important;
 }
 .btn-secondary:hover{
     background-color: #EDFAD4 !important;
