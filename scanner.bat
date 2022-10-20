@@ -1,0 +1,1 @@
+sonar-scanner.bat -D"sonar.projectKey=Rails-Project" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=sqp_017bc6b225069b1fc95f63c906dd490b1742a110"

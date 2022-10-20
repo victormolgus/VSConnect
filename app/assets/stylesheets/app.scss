@@ -10,7 +10,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto Mono';
+    font-family: 'Roboto Mono', sans-serif;
     background-color: #E8E6D4 !important;
 }
 
@@ -21,7 +21,7 @@ h4,
 h5,
 h6 {
     color: #5A7566;
-    font-family: 'Bevan';
+    font-family: 'Bevan', sans-serif;
     //padding-bottom: 25px;
 }
 
@@ -71,7 +71,7 @@ hr {
     color: #E8E6D4;
 }
 .navbar-brand {
-    font-family: 'Bevan';
+    font-family: 'Bevan', sans-serif;
     color: #E8E6D4 !important;
 }
 

@@ -10,16 +10,17 @@ class FriendsController < ApplicationController
 
   # GET /friends/1 or /friends/1.json
   def show
+    #Empty method
   end
 
   # GET /friends/new
   def new
-    #@friend = Friend.new
     @friend = current_user.friends.build
   end
 
   # GET /friends/1/edit
   def edit
+    #Empty method
   end
 
   # POST /friends or /friends.json

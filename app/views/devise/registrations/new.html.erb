@@ -35,7 +35,6 @@
 
               <div class="mb-3">
                 <label for="InputGender" class="form-label">Gênero</label><br />
-                  <!-- <%= f.select :gender, %w{Male Female Other}, :prompt=> 'Select', required: true, placeholder: 'Gender'%>  -->
                   <%= f.select :gender, options_for_select(["Masculino","Feminino","Outro"]), {prompt: "Selecione" }, {
                     class: "form-select" } %>
               </div>
