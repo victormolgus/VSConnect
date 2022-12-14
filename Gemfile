@@ -1,7 +1,13 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+#gem "rspec"
+
 ruby "3.1.2"
+
+# gem 'factory_girl', '~> 4.9'
+
+# gem 'factory_bot', '~> 6.2', '>= 6.2.1'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
@@ -73,6 +79,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'rspec-mocks'	
 end
 
 gem "devise", "~> 4.8"
